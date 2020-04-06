@@ -9,7 +9,7 @@ namespace AutomationPractice.TestStep
         public void deleteProduct()
         {
             deleteCartPage.deleteSecondProduct();
-            Task.Delay(10000).Wait();
+            Task.Delay(5000).Wait();
             deleteCartPage.verifyQuantityafterDelete();
         }
     }
