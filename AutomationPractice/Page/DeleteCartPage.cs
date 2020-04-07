@@ -14,8 +14,6 @@ namespace AutomationPractice.Page
             this._driver = BaseTest.driver;
         }
 
-        //summary_products_quantity
-
         IWebElement deleteSecondItem => _driver.FindElement(By.XPath("(//*[contains(@class,'cart_quantity_delete')])[2]"));
 
         IWebElement TotalProduct => _driver.FindElement(By.Id("summary_products_quantity"));
@@ -42,7 +40,7 @@ namespace AutomationPractice.Page
             }
             else
             {
-                ExtentTestManager.GetTest().Log(Status.Fail, "Deletion operation is not preformed");
+                ExtentTestManager.GetTest().Log(Status.Fail, "Deletion operation is not performed");
             }
         }
     }
