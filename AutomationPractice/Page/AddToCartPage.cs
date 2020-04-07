@@ -19,8 +19,6 @@ namespace AutomationPractice.Page
 
         IWebElement AddedProduct => _driver.FindElement(By.Id("summary_products_quantity"));
 
-       // IWebElement allProductList => _driver.FindElement(By.XPath("//div[@class='product-image-container']/descendant::a[@class='quick-view']"));
-
         IWebElement productList => _driver.FindElement(By.XPath("//a[@class='product_img_link']/descendant::img"));
 
         IWebElement SelectedFrame => _driver.FindElement(By.XPath("//*[contains(@class,'fancybox-iframe')]"));
@@ -31,12 +29,8 @@ namespace AutomationPractice.Page
 
         IWebElement proceedToPurchase => _driver.FindElement(By.ClassName("button-medium"));
 
-       // IWebElement quantity => _driver.FindElement(By.ClassName("ajax_cart_quantity"));
-
         public void AddtoCart()
         {
-            //BaseTest.WaitUntilElementExists(allProductList);
-
             IList<IWebElement> list = _driver.FindElements(By.XPath("//div[@class='product-image-container']/descendant::a[@class='quick-view']")); ;
 
             for (int i = 0; i < 2; i++)
