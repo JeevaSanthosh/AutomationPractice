@@ -1,5 +1,1 @@
-{
-"url":"http://automationpractice.com/index.php",
-"user":"d1474341@urhen.com",
-"pass":"Password"
-}
+b'{\n"url":"http://automationpractice.com/index.php",\n"user":"test",\n"pass":"Password"\n}'
